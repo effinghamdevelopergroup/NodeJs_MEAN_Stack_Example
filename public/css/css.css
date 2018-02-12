@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+.rounded_imgs {
+    height: 100vh;
+    overflow: hidden;
+}
+.inner {
+    height: 50vh;
+    position: relative;
+	pointer-events: none;
+}
+.alert {
+	background-color: #bdbdbd;
+}
+
+.rotate {
+  transition: all 1s ease-in-out;
+}
+/*.img1 {
+	background: url(../images/1.jpg);
+}
+.img2 {
+	background: url(../images/2.jpg);
+}
+.img3 {
+	background: #bdbdbd;
+}*/
+.img4 {
+	background: transparent !important;
+}
+.inner:active{
+    outline: 0;
+border: none;
+}
+.inner:focus{
+    outline: 0;
+border: none;
+}
+.inner .images {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+	border: 1px solid #9A9A9A;
+	pointer-events: auto;
+	overflow: hidden;
+	background: #9A9A9A;
+	/*background: #bdbdbd;*/
+}
+.inner .images img {
+    width: 210px;
+    height: 210px;
+}
+
+
+@media only screen and (min-width: 780px) and (max-width: 1380px) {
+   	.inner .images {
+		width: 210px;
+		height: 210px;
+	}
+} 
+
+.blankCircle {
+    background: transparent !important;
+}
+.DontShow{
+    display:none;
+}
+.Show{
+    display:block;
+}
+
+.modal-backdrop{
+    background-color: rgba(4, 4, 4, 0.68) !important;
+}
+#LoadingImg{
+    position: fixed;
+    top: 40%;
+    left: 44%;
+}
+.WaitDiv {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: large;
+    font-weight: 600;
+}
+.LoadingDiv {
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: large;
+    font-weight: 600;
+}

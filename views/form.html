@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Node Example</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <script src="/public/js/angular/angular.min.js"></script>
+    <script src="/public/js/angular-animate/angular-animate.min.js"></script>
+    <script src="/public/js/angular-aria/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="/public/js/angular-material/angular-material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/public/app.js"></script>
+    <script src="/public/js/socket.io.js"></script>
+    <script src="https://rawgit.com/johnschult/jquery.countdown360/master/dist/jquery.countdown360.min.js"></script>
+    <script src="/public/js/angular-animate.js"></script>
+    <link rel="stylesheet" href="/public/css/css.css">
+
+</head>
+<body ng-app="nodeExample" ng-controller="MainController" id="bodyContainer">
+    <div class="container">
+        <h1>
+            Login Form
+        </h1>
+
+        <div class="form pull-left">
+            <div class="row col-md-12">
+                <label for="name">Name</label>
+                <input id="name" type="text" ng-model="name" class="form-control" />{{name}}
+            </div>
+            <div class="row col-md-12">
+                <label for="email">Email</label>
+                <input id="email" type="text" ng-model="email" class="form-control" />{{email}}
+            </div>
+            <div class="row col-md-12">
+                <button name="submit" id="submit" ng-click="submit()">Submit</button>
+            </div>
+        </div>
+        <div id="message" ng-if="message != ''">{{message}}</div>
+    </div>
+</body>
+</html>
